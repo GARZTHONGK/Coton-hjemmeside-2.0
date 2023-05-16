@@ -22,6 +22,8 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 10;
+    flex-wrap: wrap;
 }
 .top-nav img{
     height: 100px;
@@ -33,6 +35,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    flex-wrap: wrap;
     
 
 }
@@ -51,13 +54,16 @@ body{
     color: black;
     white-space: normal;
 }
+main{
+    margin-top: 140px;
+}
 main .announcement h1{
     text-align: center;
     
 }
 main .welcome{
     height: 500px;
-    background-image: url(img/harold);
+    background-image: url(img/harold.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,15 +85,61 @@ main .welcome p{
 main .welcome > img{
     height: 150px;
 }
-
+.background-container{
+    background-image: url(/img/dogonback0.5opacity.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
 .kommende{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     
 }
-.kommende div{
+
+.kommende span{
+    width: 100%;
     display: flex;
-    
+    background-color: white;
     flex-direction: column;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px; 
+    clip-path: polygon(100% 0, 100% 85%, 51% 100%, 0 85%, 0 0);
+}
+.kommende span h1{
+    font-size: 1.7rem;
+}
+.kommende span p{
+    font-size: 1.2rem;
+    padding-bottom: 50px;
+}
+.about{
+    margin-top: 50px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
+.about h1{
+    font-size: 1.7rem;
+    margin-top: 50px;
+
+}
+.about div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.about img{
+    max-width: 40vw;
+    /* min-width: 10vw; */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
+}
+.about p{
+    margin: 20px;
+    font-size: 1.2rem;
+    width: 40vw;
 }
