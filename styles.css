@@ -13,8 +13,6 @@ body{
 .top-nav{
     background-color: hsla(360, 100%, 84%, 1);
     min-height: 40px;
-    padding-left: 100px;
-    padding-right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -24,6 +22,10 @@ body{
     width: 100%;
     z-index: 10;
     flex-wrap: wrap;
+}
+.top-nav svg{
+    margin-top: 10px;
+    height: 100px;
 }
 .top-nav img{
     height: 100px;
@@ -41,9 +43,10 @@ body{
 }
 .top-nav ul li{
     margin:20px;
-    padding: 10px;
-    border: solid black 1px;
+    padding: 15px;
+    /* border: solid black 1px; */
     border-radius: 50px;
+    background-color: hsla(360, 15%, 84%, 1);
     
 }
 .top-nav ul li a{
@@ -57,11 +60,11 @@ body{
 main{
     margin-top: 140px;
 }
-main .announcement h1{
+.announcement h1{
     text-align: center;
     
 }
-main .welcome{
+.welcome{
     height: 500px;
     background-image: url(img/harold.png);
     background-position: center top;
@@ -72,17 +75,17 @@ main .welcome{
     justify-content: space-around;
     align-items: center;
 }
-main .welcome  h1{
+.welcome  h1{
     font-size: 2.5rem;
     color: white;
     text-shadow: 0px 3px 2px rgba(0,0,0,0.6);
 }
-main .welcome p{
+.welcome p{
     font-size: 2rem;
     color: white;
     text-shadow: 0px 3px 2px rgba(0,0,0,0.6);
 }
-main .welcome > img{
+.welcome > img{
     height: 150px;
 }
 .background-container{
@@ -105,7 +108,7 @@ main .welcome > img{
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px; 
-    clip-path: polygon(100% 0, 100% 85%, 51% 100%, 0 85%, 0 0);
+    clip-path: polygon(100% 0, 100% 85%, 50% 100%, 0 85%, 0 0);
 }
 .kommende span h1{
     font-size: 1.7rem;
@@ -126,20 +129,41 @@ main .welcome > img{
 .about h1{
     font-size: 1.7rem;
     margin-top: 50px;
-
+    margin-bottom: 50px;
+    
 }
 .about div{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .about img{
     max-width: 40vw;
     /* min-width: 10vw; */
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.6);
+    margin-bottom: 40px;
 }
 .about p{
     margin: 20px;
     font-size: 1.2rem;
     width: 40vw;
+}
+footer{
+    background-color: white;
+    padding-top: 50px;
+    padding-left: 200px;
+}
+footer h1{
+    margin: 0;
+    /* text-align: center; */
+    font-size: 1.7rem;
+}
+footer ul{
+    /* display: flex;
+    justify-content: space-evenly; */
+}
+footer ul li{
+    margin: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
 }
