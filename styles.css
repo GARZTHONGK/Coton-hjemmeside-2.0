@@ -12,6 +12,7 @@ body{
 }
 .top-nav{
     background-color: hsla(360, 100%, 84%, 1);
+    /* background-color: white; */
     min-height: 40px;
     display: flex;
     flex-direction: row;
@@ -23,6 +24,26 @@ body{
     z-index: 10;
     flex-wrap: wrap;
 }
+.top-nav ul{
+    transform: translateX(0);
+}
+#nav-toggle{
+    position: absolute;
+    right: 15px;
+    top: 50px;
+    scale: 2;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 11;
+}
+#nav-toggle:checked + .top-nav ul{
+    transform: translateX(0);
+}
+#menu{
+    height: 30px;
+}
+
+
 .top-nav svg{
     margin-top: 10px;
     height: 100px;
@@ -46,11 +67,15 @@ body{
     padding: 12px;
     /* border: solid black 1px; */
     border-radius: 50px;
-    background-color: hsla(360, 15%, 84%, 1);
+    /* background-color: hsla(360, 15%, 84%, 1); */
     
 }
 .top-nav ul li a{
     white-space: nowrap;
+    font-size: 1.2rem;
+}
+.top-nav ul li a:hover{
+    color: gray;
 }
 .top-nav ul li a:link, nav ul li a:visited{
     text-decoration: none;
@@ -151,19 +176,21 @@ main{
 footer{
     background-color: white;
     padding-top: 50px;
-    padding-left: 200px;
+    /* padding-left: 200px; */
+    
 }
 footer h1{
     margin: 0;
-    /* text-align: center; */
+    text-align: center;
     font-size: 1.7rem;
 }
 footer ul{
-    /* display: flex;
-    justify-content: space-evenly; */
+    display: flex;
+    justify-content: space-evenly;
 }
 footer ul li{
     margin: 20px;
     margin-bottom: 40px;
     font-size: 1.2rem;
+    list-style-type: none;
 }
