@@ -123,6 +123,7 @@ body{
     background-image: url(/img/dogonback0.5opacity.png);
     background-repeat: no-repeat;
     background-size: cover;   
+    background-position: center right;
 }
 .kommende{
     display: flex;
@@ -223,6 +224,9 @@ footer ul li{
     }
     .welcome span p{
         font-size: 1.2rem;
+    }
+    .background-container{
+        background-position: center right 20%;
     }
     .kommende span h1{
         font-size: 1.5rem;
