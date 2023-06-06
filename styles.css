@@ -81,15 +81,18 @@ body{
     white-space: nowrap;
     font-size: 1.2rem;
 }
-.top-nav ul li a:hover{
-    color: gray;
-}
+
 .top-nav ul li a:link, nav ul li a:visited{
     text-decoration: none;
     color: black;
     white-space: normal;
 }
-
+.top-nav ul li a:hover{
+    color: gray;
+}
+.announcement{
+    background-color: white;
+}
 .announcement h1{
     text-align: center;
     
@@ -188,6 +191,28 @@ body{
     font-size: 1.2rem;
     /* width: 40vw; */
 }
+/* Om racen.html region */
+.omracen{
+    display: flex;
+    justify-content: space-between;
+}
+.omracen div{
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.omracen div h1{
+    font-size: 1.7rem;
+    
+}
+.omracen div p{
+    font-size: 1.2rem;
+}
+.omracen img{
+    margin-left: 0px;
+}
 footer{
     background-color: white;
     padding-top: 50px;
@@ -223,6 +248,7 @@ footer ul li{
     .about div{
         flex-direction: column
     }
+    
     footer ul{
         display: flex;
         flex-direction: column;
