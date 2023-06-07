@@ -91,11 +91,17 @@ body{
     color: gray;
 }
 .announcement{
-    background-color: white;
+    background-color: hsla(360, 100%, 84%, 1);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 6px -1px rgba(0,0,0,1);
+    /* margin-bottom: 20px; */
 }
-.announcement h1{
-    text-align: center;
-    
+.announcement div{
+    height: 100%;
+}
+.announcement div h1{
+    font-weight: lighter;
 }
 .welcome{
     height: 500px;
@@ -192,6 +198,7 @@ body{
     font-size: 1.2rem;
     /* width: 40vw; */
 }
+
 /* Om racen.html region */
 .omracen{
     display: flex;
@@ -206,13 +213,17 @@ body{
 }
 .omracen div h1{
     font-size: 1.7rem;
+    margin-top: 50px;
     
 }
 .omracen div p{
     font-size: 1.2rem;
 }
 .omracen img{
-    margin-left: 0px;
+    width: 50vw;
+    margin-left: 20px;
+    object-fit: cover;
+
 }
 footer{
     background-color: white;
