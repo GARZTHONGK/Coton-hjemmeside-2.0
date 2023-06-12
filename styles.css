@@ -98,6 +98,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     /* margin-bottom: 20px; */
+    /* display: none; */
 }
 .announcement div{
     height: 100%;
@@ -203,7 +204,7 @@ body{
 .opdræt{
     background-image: url(img/AstaPuppy.png);
     background-repeat: no-repeat;
-    background-position: center 80%;
+    background-position: center 70%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -299,7 +300,11 @@ footer ul li{
     font-size: 1.2rem;
     list-style-type: none;
 }
-
+@media screen and (max-width:1100px) {
+    .opdræt{
+        background-position: 70% 80%;
+    }
+}
 @media screen and (max-width:720px) {
     .top-nav ul{
         padding-left: 0;
@@ -334,11 +339,22 @@ footer ul li{
         padding: 0px;
     } */
     .opdræt{
+        padding: 0;
         align-items: center;
+        justify-content: center;
+        background-position: 70%;
     }
     .opdræt div{
         margin: 0px;
+        width: 70%;
+        background-color: hsla(0, 0%, 100%, 0.40)
         
+    }
+    .opdræt div h1{
+        font-size: 1.5rem;
+    }
+    .opdræt div p{
+        font-size: 1rem;
     }
     .omracen{
         display: flex;
