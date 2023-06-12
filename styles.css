@@ -238,7 +238,7 @@ body{
 .omracen h1{
     text-align: center;
     grid-column: 1/-1;
-    border-bottom: solid lightgray 1px;
+    /* border-bottom: solid lightgray 1px; */
     margin: 0px;
     padding: 30px;
 }
