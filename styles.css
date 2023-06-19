@@ -205,7 +205,7 @@ body{
     background-image: url(img/AstaPuppy.png);
     background-repeat: no-repeat;
     background-position: center 70%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,6 +216,8 @@ body{
     width: 300px;
     border: solid hsla(0, 0%, 35%, 0.30) 2px;
     padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     margin-left: 150px;
     border-radius: 25px;
     
@@ -225,8 +227,8 @@ body{
     font-size: 1.7rem;
 }
 .opdræt div p{
-    font-size: 1.2rem;
-
+    /* font-size: 1.2rem; */
+    font-size: 1rem;
 }
 
 /* Om racen.html region */
@@ -263,7 +265,7 @@ body{
     width: 45vw;
 }
 .omracen img{
-    width: 50vw;
+    width: 100%;
     /* margin-left: 20px; */
     object-fit: cover;
     max-height: 500px;
@@ -304,6 +306,9 @@ footer ul li{
     .opdræt{
         background-position: 70% 80%;
     }
+    .opdræt div p{
+        font-size: 1rem
+    }
 }
 @media screen and (max-width:720px) {
     .top-nav ul{
@@ -342,10 +347,12 @@ footer ul li{
         padding: 0;
         align-items: center;
         justify-content: center;
-        background-position: 70%;
+        background-position: 70% 60%;
     }
     .opdræt div{
         margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         width: 70%;
         background-color: hsla(0, 0%, 100%, 0.40)
         
