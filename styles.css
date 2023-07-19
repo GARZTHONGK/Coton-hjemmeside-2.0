@@ -227,7 +227,33 @@ body{
     font-size: 1.2rem;
 
 }
-
+.hunde{
+    /* padding-left: 200px;
+    padding-right: 200px; */
+}
+.hunde h1{
+    text-align: center;
+}
+.hunde > div{
+    padding: 20px;
+    padding-top: 0px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    border: dashed lightgray 1px;
+}
+/* .hunde > div div{
+    margin: 0px 20px 0 20px;
+} */
+.hunde div div img{
+    /* width: 100vw; */
+    
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
 /* Om racen.html region */
 .omracen{
     display: grid;
@@ -300,7 +326,20 @@ footer ul li{
     list-style-type: none;
 }
 
+@media screen and (max-width:1150px){
+    .hunde > div{
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hunde > div img{
+        width: 50%;
+    }
+}
 @media screen and (max-width:720px) {
+    
     .top-nav ul{
         padding-left: 0;
     }
@@ -369,6 +408,9 @@ footer ul li{
 @media screen and (max-width:470px) {
     .about img{
         display: none;
+    }
+    .hunde > div img{
+        width: 100%;
     }
     .omracen h1{
         padding-top: 20px;
